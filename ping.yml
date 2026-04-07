@@ -1,7 +1,7 @@
 ---
-- name: Test Connectivity
-  hosts: all
+- name: Test Windows Connectivity
+  hosts: windows
   gather_facts: false
   tasks:
-    - name: Ping all hosts
-      ansible.builtin.ping:
+    - name: WinRM Ping Check
+      ansible.windows.win_ping:
