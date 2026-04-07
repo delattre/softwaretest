@@ -1,0 +1,6 @@
+---
+
+- hosts: all
+    tasks:
+    - name: Win_Ping
+      Win_Ping
